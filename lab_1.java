@@ -29,57 +29,57 @@ public class lab_1 {
 	        System.out.println("1.10 " + t10);
 	    }
 
-	    private static boolean subtask1() { // объявление метода
+	    private static boolean subtask1() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.1 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите целое число: ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str = sc.nextLine(); // reads string
 	        boolean bNumeric = lab_1.isNumeric(str);
 	        if (!bNumeric) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask1();
 	        }
 	        char lastNumber = str.charAt(str.length() - 1);
-	        System.out.println("Последняя цифра: " + lastNumber);
+	        System.out.println("РџРѕСЃР»РµРґРЅСЏСЏ С†РёС„СЂР°: " + lastNumber);
 	        return true;
 	    }
 
-	    private static boolean subtask2() { // объявление метода
+	    private static boolean subtask2() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.2 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите целое трехзначное число: ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ: ");
 	        String str = sc.nextLine(); // reads string
 	        boolean bNumeric = lab_1.isNumeric(str);
 	        if (!bNumeric) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask2();
 	        }
 	        if (str.length() != 3) {
-	            System.out.println("Ожидалось целое трехзначное число!!!!!!");
+	            System.out.println("РћР¶РёРґР°Р»РѕСЃСЊ С†РµР»РѕРµ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ!!!!!!");
 	            return lab_1.subtask2();
 	        }
 	        int number00 = Integer.parseInt(str.substring(0, 1));
 	        int number01 = Integer.parseInt(str.substring(1, 2));
 	        int number02 = Integer.parseInt(str.substring(2, 3));
 	        int numberSum = number00 + number01 + number02;
-	        System.out.println("Сумма:" + numberSum);
+	        System.out.println("РЎСѓРјРјР°:" + numberSum);
 	        return true;
 	    }
 
-	    private static boolean subtask3() { // объявление метода
+	    private static boolean subtask3() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.3 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите целое число: ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric = lab_1.isNumeric(str);
 	        if (!bNumeric) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask3();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number = Integer.parseInt(str);
-	        // проверяем положительность
+	        // РїСЂРѕРІРµСЂСЏРµРј РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ
 	        boolean pos = number > 0;
 	        if (pos) {
 	            System.out.println(number + 1);
@@ -89,18 +89,18 @@ public class lab_1 {
 	        return true;
 	    }
 
-	    private static boolean subtask4() { // объявление метода
+	    private static boolean subtask4() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.4 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите целое число: ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric = lab_1.isNumeric(str);
 	        if (!bNumeric) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask4();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number = Integer.parseInt(str);
 	        if (number > 0) {
 	            System.out.println(number + 1);
@@ -112,38 +112,38 @@ public class lab_1 {
 	        return true;
 	    }
 
-	    private static boolean subtask5() { // объявление метода
+	    private static boolean subtask5() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.5 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите целое число: ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str0 = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric0 = lab_1.isNumeric(str0);
 	        if (!bNumeric0) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask5();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number0 = Integer.parseInt(str0);
-	        System.out.print("Введите целое число: ");
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str1 = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric1 = lab_1.isNumeric(str1);
 	        if (!bNumeric1) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask5();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number1 = Integer.parseInt(str1);
-	        System.out.print("Введите целое число: ");
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str2 = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric2 = lab_1.isNumeric(str2);
 	        if (!bNumeric2) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask5();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number2 = Integer.parseInt(str2);
 	        int min = number0;
 	        if (min > number1) {
@@ -152,83 +152,83 @@ public class lab_1 {
 	        if (min > number2) {
 	            min = number2;
 	        }
-	        System.out.println("Меньшее число:");
+	        System.out.println("РњРµРЅСЊС€РµРµ С‡РёСЃР»Рѕ:");
 	        System.out.println(min);
 	        return true;
 	    }
 
-	    private static boolean subtask6() { // объявление метода
+	    private static boolean subtask6() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.6 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите целое число: ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ: ");
 	        String str = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric = lab_1.isNumeric(str);
 	        if (!bNumeric) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask6();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number = Integer.parseInt(str);
 	        if (number > 0 && (number % 2) == 0) {
-	            System.out.println("ПОЛОЖИТЕЛЬНОЕ ЧЕТНОЕ");
+	            System.out.println("РџРћР›РћР–РРўР•Р›Р¬РќРћР• Р§Р•РўРќРћР•");
 	        } else if (number > 0 && (number % 2) != 0) {
-	            System.out.println("ПОЛОЖИТЕЛЬНОЕ НЕЧЕТНОЕ");
+	            System.out.println("РџРћР›РћР–РРўР•Р›Р¬РќРћР• РќР•Р§Р•РўРќРћР•");
 	        } else if (number < 0 && (number % 2) == 0) {
-	            System.out.println("ОТРИЦАТЕЛЬНОЕ ЧЕТНОЕ");
+	            System.out.println("РћРўР РР¦РђРўР•Р›Р¬РќРћР• Р§Р•РўРќРћР•");
 	        } else if (number < 0 && (number % 2) != 0) {
-	            System.out.println("ОТРИЦАТЕЛЬНОЕ НЕЧЕТНОЕ");
+	            System.out.println("РћРўР РР¦РђРўР•Р›Р¬РќРћР• РќР•Р§Р•РўРќРћР•");
 	        } else if (number == 0) {
-	            System.out.println("НОЛЬ");
+	            System.out.println("РќРћР›Р¬");
 	        }
 	        return true;
 	    }
 
-	    private static boolean subtask7() { // объявление метода
+	    private static boolean subtask7() { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.7 =================");
-	        Scanner sc = new Scanner(System.in); // подключение считывателя
-	        System.out.print("Введите код города(Москва-905, Ростов-194, Краснодар-491, Киров-800): ");
+	        Scanner sc = new Scanner(System.in); // РїРѕРґРєР»СЋС‡РµРЅРёРµ СЃС‡РёС‚С‹РІР°С‚РµР»СЏ
+	        System.out.print("Р’РІРµРґРёС‚Рµ РєРѕРґ РіРѕСЂРѕРґР°(РњРѕСЃРєРІР°-905, Р РѕСЃС‚РѕРІ-194, РљСЂР°СЃРЅРѕРґР°СЂ-491, РљРёСЂРѕРІ-800): ");
 	        String str = sc.nextLine(); // reads string
-	        // проверка что это число
+	        // РїСЂРѕРІРµСЂРєР° С‡С‚Рѕ СЌС‚Рѕ С‡РёСЃР»Рѕ
 	        boolean bNumeric = lab_1.isNumeric(str);
 	        if (!bNumeric) {
-	            System.out.println("На ввод ожидалось число!!!");
+	            System.out.println("РќР° РІРІРѕРґ РѕР¶РёРґР°Р»РѕСЃСЊ С‡РёСЃР»Рѕ!!!");
 	            return lab_1.subtask7();
 	        }
-	        // превращаем в число
+	        // РїСЂРµРІСЂР°С‰Р°РµРј РІ С‡РёСЃР»Рѕ
 	        int number = Integer.parseInt(str);
 	        double price = 0;
 	        String city = "";
 	        switch (number) {
 	            case (905):
-	                city = "Москва";
+	                city = "РњРѕСЃРєРІР°";
 	                price = 4.15;
 	                break;
 	            case (194):
-	                city = "Ростов";
+	                city = "Р РѕСЃС‚РѕРІ";
 	                price = 1.98;
 	                break;
 	            case (491):
-	                city = "Краснодар";
+	                city = "РљСЂР°СЃРЅРѕРґР°СЂ";
 	                price = 2.69;
 	                break;
 	            case (800):
-	                city = "Киров";
+	                city = "РљРёСЂРѕРІ";
 	                price = 5.00;
 	                break;
 
 	            default:
-	                System.out.println("Неверный код");
+	                System.out.println("РќРµРІРµСЂРЅС‹Р№ РєРѕРґ");
 	                return false;
 
 	        }
 
-	        System.out.println(city + ". Стоимость разговора: " + price * 10);
+	        System.out.println(city + ". РЎС‚РѕРёРјРѕСЃС‚СЊ СЂР°Р·РіРѕРІРѕСЂР°: " + price * 10);
 
 	        return true;
 	    }
 
-	    private static boolean subtask8(int[] numbers) { // объявление метода
+	    private static boolean subtask8(int[] numbers) { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.8 =================");
 	        int max = numbers[0];
 	        int sumPos = 0;
@@ -252,14 +252,14 @@ public class lab_1 {
 	                avgCountNeg++;
 	            }
 	        }
-	        System.out.println("Максимальное значение: " + max + "\nСумма положительных элементов: " + sumPos
-	                + "\nСумма четных отрицательных элементов: " + sumChetNeg + "\nКоличество положительных элементов: "
-	                + countPos + "\nСреднее арифметическое отрицательных элементов: " + avgNeg);
+	        System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: " + max + "\nРЎСѓРјРјР° РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: " + sumPos
+	                + "\nРЎСѓРјРјР° С‡РµС‚РЅС‹С… РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: " + sumChetNeg + "\nРљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: "
+	                + countPos + "\nРЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: " + avgNeg);
 
 	        return true;
 	    }
 
-	    private static boolean subtask9(int[] numbers) { // объявление метода
+	    private static boolean subtask9(int[] numbers) { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.9 =================");
 	        int[] massive = new int[numbers.length];
 	        String str = "";
@@ -271,7 +271,7 @@ public class lab_1 {
 	        return true;
 	    }
 
-	    private static boolean subtask10(int[] numbers) { // объявление метода
+	    private static boolean subtask10(int[] numbers) { // РѕР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°
 	        System.out.println("\n1.10 =================");
 	        int[] massive = new int[numbers.length];
 	        String str = "";
